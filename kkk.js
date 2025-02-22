@@ -15,7 +15,7 @@
                 card_type: "true",
                 page: 1
             })
-        }), $(".menu .menu__list").eq(0).append(_)
+        }), $(".menu .menu__list").eq(0).append(e)
     }
 
     function t() {
