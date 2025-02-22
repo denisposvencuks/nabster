@@ -1,6 +1,8 @@
 ! function() {
     "use strict";
     
+    var _ = '';
+
     function e() {
         var _ = $('<li class="menu__item selector" data-action="hd"><div class="menu__ico">' + _ + '</div><div class="menu__text">HULU</div></li>');
         _.on("hover:enter", function() {
