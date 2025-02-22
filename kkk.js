@@ -64,11 +64,11 @@
     }
 
     function i() {
-        var e = $('<li class="menu__item selector" data-action="kion"><div class="menu__ico">' + _ + '</div><div class="menu__text">KION</div></li>');
+        var e = $('<li class="menu__item selector" data-action="kion"><div class="menu__ico">' + _ + '</div><div class="menu__text">APPLE+</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "discover/tv?language=ru&with_networks=4085",
-                title: "KION",
+                url: "discover/tv?language=ru&with_networks=2552",
+                title: "APPLE+",
                 component: "category_full",
                 source: "tmdb",
                 sort: "now",
@@ -407,7 +407,7 @@
                     default: 0
                 },
                 field: {
-                    name: "KION"
+                    name: "APPLE+"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="kion"]').length ? i() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
