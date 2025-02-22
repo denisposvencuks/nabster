@@ -18,11 +18,11 @@
     }
 
     function t() {
-        var e = $('<li class="menu__item selector" data-action="okko"><div class="menu__ico">' + _ + '</div><div class="menu__text">Okko</div></li>');
+        var e = $('<li class="menu__item selector" data-action="okko"><div class="menu__ico">' + _ + '</div><div class="menu__text">Disney+</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "discover/tv?language=ru&with_networks=3871",
-                title: "Okko",
+                url: "discover/tv?language=ru&with_networks=2739",
+                title: "Disney+",
                 component: "category_full",
                 source: "tmdb",
                 sort: "now",
@@ -338,7 +338,7 @@
                     default: 0
                 },
                 field: {
-                    name: "Okko"
+                    name: "Disney+"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="okko"]').length ? t() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
