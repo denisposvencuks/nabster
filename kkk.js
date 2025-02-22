@@ -49,11 +49,11 @@
     }
 
     function o() {
-        var e = $('<li class="menu__item selector" data-action="wink"><div class="menu__ico">' + _ + '</div><div class="menu__text">Wink</div></li>');
+        var e = $('<li class="menu__item selector" data-action="wink"><div class="menu__ico">' + _ + '</div><div class="menu__text">HBO</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "discover/tv?language=ru&with_networks=5806",
-                title: "Wink",
+                url: "discover/tv?language=ru&with_networks=49",
+                title: "HBO",
                 component: "category_full",
                 source: "tmdb",
                 sort: "now",
@@ -94,11 +94,11 @@
     }
 
     function r() {
-        var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">HBO</div></li>');
+        var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">HBO MAX</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
                 url: "discover/tv?language=ru&with_networks=3186",
-                title: "HBO",
+                title: "HBO MAX",
                 component: "category_full",
                 source: "tmdb",
                 card_type: "true",
@@ -305,7 +305,7 @@
                     default: 0
                 },
                 field: {
-                    name: "HBO"
+                    name: "HBO MAX"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="rus"]').length ? r() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
@@ -390,7 +390,7 @@
                     default: 0
                 },
                 field: {
-                    name: "Wink"
+                    name: "HBO"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="wink"]').length ? o() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
