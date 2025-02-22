@@ -96,10 +96,10 @@
         var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">Русские</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "?cat=movie&airdate=2023-2025&without_genres=16&language=ru",
-                title: "Русские фильмы",
+                url: "discover/tv?language=ru&with_networks=7869",
+                title: "HBO",
                 component: "category_full",
-                source: "cub",
+                source: "tmdb",
                 card_type: "true",
                 page: 1
             })
@@ -304,7 +304,7 @@
                     default: 0
                 },
                 field: {
-                    name: "Русские"
+                    name: "HBO"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="rus"]').length ? r() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
