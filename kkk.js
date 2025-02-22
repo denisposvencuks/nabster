@@ -93,7 +93,7 @@
     }
 
     function r() {
-        var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">Русские</div></li>');
+        var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">HBO</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
                 url: "discover/tv?language=ru&with_networks=7869",
