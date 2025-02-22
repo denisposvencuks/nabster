@@ -96,7 +96,7 @@
         var e = $('<li class="menu__item selector" data-action="rus"><div class="menu__ico">' + _ + '</div><div class="menu__text">HBO</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "discover/tv?language=ru&with_networks=7869",
+                url: "discover/tv?language=ru&with_networks=3186",
                 title: "HBO",
                 component: "category_full",
                 source: "tmdb",
