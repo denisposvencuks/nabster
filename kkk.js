@@ -9,7 +9,7 @@
                 url: "discover/tv?language=ru&with_networks=7869",
                 title: "HBO",
                 component: "category_full",
-                source: "cub",
+                source: "tmdb",
                 sort: "now",
                 card_type: "true",
                 page: 1
