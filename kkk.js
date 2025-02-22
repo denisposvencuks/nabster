@@ -122,11 +122,11 @@
     }
 
     function l() {
-        var e = $('<li class="menu__item selector" data-action="kp"><div class="menu__ico">' + _ + '</div><div class="menu__text">Кинопоиск</div></li>');
+        var e = $('<li class="menu__item selector" data-action="kp"><div class="menu__ico">' + _ + '</div><div class="menu__text">CW</div></li>');
         e.on("hover:enter", function() {
             Lampa.Activity.push({
-                url: "discover/tv?language=ru&with_networks=3827",
-                title: "Кинопоиск",
+                url: "discover/tv?language=ru&with_networks=71",
+                title: "CW",
                 component: "category_full",
                 source: "tmdb",
                 sort: "now",
@@ -356,7 +356,7 @@
                     default: 0
                 },
                 field: {
-                    name: "Кинопоиск"
+                    name: "CW"
                 },
                 onChange: function(_) {
                     1 == _ && 0 == $('[data-action="kp"]').length ? l() : Lampa.Helper.show("Необходимо переоткрыть Lampa")
